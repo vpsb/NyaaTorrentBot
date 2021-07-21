@@ -16,3 +16,4 @@ async def nyaa_id(unique_id):
             data = await response.json()
             return data["info"]
 
+
