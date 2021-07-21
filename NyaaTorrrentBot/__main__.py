@@ -1,4 +1,4 @@
-from bot import NYAA
+from NyaaTorrrentBott import NYAA
 from pyrogram import filters
 from NyaaTorrrentBot.modules import start, help, nyaa_search, magnet, callback
 
