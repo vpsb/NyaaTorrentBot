@@ -1,0 +1,39 @@
+{
+
+  "name": "Nyaa Torrent Bot",
+
+  "description": "A telegram bot to fetch torrents from Nyaa.",
+
+  "keywords": ["Nyaa","python"],
+
+  "repository": "",
+
+  "env": {
+
+    "BOT_TOKEN": {
+
+      "description": "Your bot token, as a string.",
+
+      "value": ""
+
+    },
+
+    "API_ID": {
+
+      "description": "Get this value from https://my.telegram.org",
+
+      "value": ""
+
+    },
+
+    "API_HASH": {
+
+      "description": "Get this value from https://my.telegram.org",
+
+      "value": ""
+
+    }
+
+  }
+
+}
