@@ -1,7 +1,7 @@
 import aiohttp
 
 async def nyaa(query):
-    url = f"https://nyaa-api-go.herokuapp.com/nyaa/{query[0]}?query={query[-1]}&sub_category={query[1]}"
+    url = f"https://nyaaapi.herokuapp.com/nyaa/{query[0]}?query={query[-1]}&sub_category={query[1]}"
     
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
@@ -9,7 +9,7 @@ async def nyaa(query):
             return data["data"]
 
 async def nyaa_id(unique_id):
-    url = f"https://nyaa-api-go.herokuapp.com/nyaa/id/{unique_id}"
+    url = f"https://nyaaapi.herokuapp.com/nyaa/id/{unique_id}"
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
